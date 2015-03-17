@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/grey_light"
+    >
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+        <include layout="@layout/margin_grey"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/vp_cycle"
+            android:id="@+id/margin_home_1"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guess_you_like"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_guess_you_like"
+                android:layout_below="@+id/margin_home_1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_change"
+                android:text="@string/change"
+                android:layout_alignBottom="@+id/tv_guess_you_like"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/black_light"
+                android:drawableLeft="@drawable/sync"
+                android:drawableStart="@drawable/sync"
+                android:drawablePadding="8dp"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizal_guess_you_like"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_guess_you_like"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:id="@+id/rl_hori_guess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+        <include layout="@layout/margin_grey"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/horizal_guess_you_like"
+            android:id="@+id/margin_home_2"/>
+
+           <TextView
+               android:layout_below="@+id/margin_home_2"
+               android:layout_marginLeft="8dp"
+               android:layout_marginStart="8dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/recommend"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               android:id="@+id/tv_recommend"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_more"
+               android:text="@string/more"
+               android:layout_alignBottom="@+id/tv_recommend"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginRight="8dp"
+               android:layout_marginEnd="8dp"
+               android:textSize="16sp"
+               android:gravity="center"
+               android:textColor="@color/black_light"
+               android:drawableRight="@drawable/next"
+               android:drawableEnd="@drawable/next"
+               android:drawablePadding="8dp"
+               />
+
+           <HorizontalScrollView
+               android:id="@+id/horizal_hori_recommend"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_recommend"
+               android:layout_marginTop="8dp"
+               android:scrollbars="none">
+
+               <RelativeLayout
+                   android:id="@+id/rl_hori_recommend"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+
+               </RelativeLayout>
+
+           </HorizontalScrollView>
+
+        <include layout="@layout/margin_grey"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/horizal_hori_recommend"
+            android:id="@+id/margin_home_3"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizal_hori_recommend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/margin_home_3"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/rl_hori_recommend2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <include layout="@layout/margin_grey"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/horizal_hori_recommend2"
+            android:id="@+id/margin_home_4"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizal_block1"
+                android:layout_below="@id/margin_home_4"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fl_hori_block1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </FrameLayout>
+
+            </HorizontalScrollView>
+
+        <include layout="@layout/margin_grey"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/horizal_block1"
+            android:id="@+id/margin_home_5"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizal_block2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@id/horizal_block1"
+                android:layout_marginTop="5dp"
+                android:scrollbars="none"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fl_hori_block2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </FrameLayout>
+
+            </HorizontalScrollView>
+
+          <include layout="@layout/margin_grey"
+              android:layout_width="match_parent"
+              android:layout_height="8dp"
+              android:layout_below="@+id/horizal_block2"
+              android:id="@+id/margin_home_5"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fine_game"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_fine_game"
+                android:layout_below="@+id/margin_home_5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_more_fine_game"
+                android:text="@string/more"
+                android:layout_alignBottom="@+id/tv_fine_game"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/black_light"
+                android:drawableRight="@drawable/next"
+                android:drawableEnd="@drawable/next"
+                android:drawablePadding="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_fine_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/tv_fine_game"
+                android:layout_marginTop="8dp">
+
+            </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_more_game"
+            android:text="@string/more_game"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:drawableRight="@drawable/next"
+            android:drawableEnd="@drawable/next"
+            android:layout_below="@+id/ll_fine_game"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:background="@color/grey_light"
+            />
+
+    </RelativeLayout>
+</ScrollView>

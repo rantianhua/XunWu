@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <rth.CustomView.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rounded_img_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        app:riv_border_width="1dp"
+        app:riv_border_color="#ab565656"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        app:riv_oval="false"
+        android:src="@drawable/game"
+        android:layout_centerVertical="true"
+        >
+    </rth.CustomView.RoundedImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/originality"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/rounded_img_item"
+        android:layout_alignLeft="@+id/rounded_img_item"
+        android:layout_alignStart="@+id/rounded_img_item"
+        android:layout_alignEnd="@+id/rounded_img_item"
+        android:layout_alignRight="@+id/rounded_img_item"
+        android:background="@drawable/tv_alignroundview_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_game_name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="老虎不吃素"
+        android:layout_alignTop="@+id/rounded_img_item"
+        android:layout_toRightOf="@+id/rounded_img_item"
+        android:layout_toEndOf="@+id/rounded_img_item"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/rb_star"
+        android:numStars="5"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/tv_game_name"
+        android:layout_alignStart="@+id/tv_game_name"
+        android:rating="5"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:progressDrawable="@drawable/star"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_rp"
+        android:text="@string/rq"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/rb_star"
+        android:layout_toEndOf="@+id/rb_star"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_rp_number"
+        android:text="23210"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/tv_rp"
+        android:layout_toEndOf="@+id/tv_rp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_game_description"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignBottom="@+id/rounded_img_item"
+        android:layout_alignStart="@+id/tv_game_name"
+        android:layout_alignLeft="@+id/tv_game_name"
+        android:text="老虎来了！为了阻挡肉食动物的脚步，你要好好的结局基督教地方"
+        android:gravity="bottom"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textColor="@color/red"
+        android:drawableEnd="@drawable/next"
+        android:drawableRight="@drawable/next"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:drawablePadding="5dp"
+        android:background="@drawable/tv_start_bg"
+        />
+
+</RelativeLayout>

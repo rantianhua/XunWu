@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/img_user"
+            android:background="@drawable/user_bg"
+            android:src="@drawable/user"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_user"
+            android:layout_toRightOf="@+id/img_user"
+            android:layout_alignEnd="@+id/img_arrow_next"
+            android:layout_alignRight="@+id/img_arrow_next"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_you_are_tourise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亲，您现在还是游客哦!"
+                android:paddingBottom="8dp"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_now"
+                android:textColor="@color/blue"
+                android:layout_below="@+id/tv_you_are_tourise"
+                android:layout_marginTop="8dp"
+                android:id="@+id/tv_login_rightnow"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，享受更多服务"
+                android:layout_toRightOf="@+id/tv_login_rightnow"
+                android:layout_toEndOf="@+id/tv_login_rightnow"
+                android:layout_alignBottom="@+id/tv_login_rightnow"/>
+
+       </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:src="@drawable/next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/img_arrow_next"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/rl_first">
+
+        <TextView
+            android:id="@+id/tv_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sub1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_nav"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/handle"
+                android:id="@+id/img_handle"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_game_hall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_handle"
+                android:layout_toEndOf="@+id/img_handle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/game_hall"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            android:layout_alignStart="@+id/rl_sub1"
+            android:layout_alignLeft="@+id/rl_sub1"
+            android:layout_alignEnd="@+id/rl_sub1"
+            android:layout_alignRight="@+id/rl_sub1"
+            android:layout_below="@+id/rl_sub1"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_sub2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/view_line1"
+            android:layout_alignRight="@+id/rl_sub1"
+            android:layout_alignEnd="@+id/rl_sub1"
+            android:layout_alignLeft="@+id/rl_sub1"
+            android:layout_alignStart="@+id/rl_sub1"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/collection"
+                android:id="@+id/img_collection"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_my_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_collection"
+                android:layout_toEndOf="@+id/img_collection"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/my_collection"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            android:layout_alignStart="@+id/rl_sub2"
+            android:layout_alignLeft="@+id/rl_sub2"
+            android:layout_alignEnd="@+id/rl_sub2"
+            android:layout_alignRight="@+id/rl_sub2"
+            android:layout_below="@+id/rl_sub2"
+           />
+
+        <RelativeLayout
+            android:id="@+id/rl_sub3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/rl_sub1"
+            android:layout_alignEnd="@+id/rl_sub1"
+            android:layout_alignLeft="@+id/rl_sub1"
+            android:layout_alignStart="@+id/rl_sub1"
+            android:layout_below="@+id/view_line2">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/active"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_active_center"
+                />
+
+            <TextView
+                android:id="@+id/tv_active_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_active_center"
+                android:layout_toEndOf="@+id/img_active_center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/active_center"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+               />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            android:layout_alignStart="@+id/rl_sub3"
+            android:layout_alignLeft="@+id/rl_sub3"
+            android:layout_alignEnd="@+id/rl_sub3"
+            android:layout_alignRight="@+id/rl_sub3"
+            android:layout_below="@+id/rl_sub3"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/view_line3"
+            android:layout_alignRight="@+id/rl_sub1"
+            android:layout_alignEnd="@+id/rl_sub1"
+            android:layout_alignLeft="@+id/rl_sub1"
+            android:layout_alignStart="@+id/rl_sub1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/recharge"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_recharge_center"
+                />
+
+            <TextView
+                android:id="@+id/tv_recharge_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_recharge_center"
+                android:layout_toEndOf="@+id/img_recharge_center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/recharge_center"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+               />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

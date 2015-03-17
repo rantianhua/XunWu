@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/renren_share"
+        android:id="@+id/img_remarker"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小火舞"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/img_remarker"
+        android:layout_toEndOf="@+id/img_remarker"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_alignTop="@+id/img_remarker"
+        android:id="@+id/tv_remarker_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_remark_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3-11  21:23"
+        android:textSize="12sp"
+        android:layout_alignLeft="@+id/tv_remarker_name"
+        android:layout_alignStart="@+id/tv_remarker_name"
+        android:layout_alignBottom="@+id/img_remarker"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:drawableEnd="@drawable/unpraise"
+        android:drawableRight="@drawable/unpraise"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawablePadding="5dp"
+        android:layout_alignTop="@+id/img_remarker"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_remark_picture"
+        android:layout_below="@+id/img_remarker"
+        android:layout_marginTop="8dp"
+        >
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_remark_content"
+        android:text="太好玩了"
+        android:layout_below="@+id/rl_remark_picture"
+        android:layout_marginTop="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        android:layout_below="@+id/tv_remark_content"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

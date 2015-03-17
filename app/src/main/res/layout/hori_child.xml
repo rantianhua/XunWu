@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/hori_child_size"
+    android:layout_height="@dimen/hori_child_size"
+    >
+
+    <include layout="@layout/rounded_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/round_img_hori_child"
+        />
+
+    <include layout="@layout/tv_alignbottom_roundimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/round_img_hori_child"
+        android:layout_alignStart="@+id/round_img_hori_child"
+        android:layout_alignRight="@+id/round_img_hori_child"
+        android:layout_alignEnd="@+id/round_img_hori_child"
+        android:layout_alignBottom="@+id/round_img_hori_child"
+        android:id="@+id/tv_align_bottom_hori_child"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_description1"
+        android:text="国际象棋"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@+id/round_img_hori_child"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+     />
+
+</RelativeLayout>
+

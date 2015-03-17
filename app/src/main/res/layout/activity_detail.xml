@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_game_photo"
+                android:background="@drawable/user_bg"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <include layout="@layout/tv_alignbottom_roundimg"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/img_game_photo"
+                android:layout_alignStart="@+id/img_game_photo"
+                android:layout_alignRight="@+id/img_game_photo"
+                android:layout_alignEnd="@+id/img_game_photo"
+                android:layout_alignBottom="@+id/img_game_photo"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老虎不吃素"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/tv_detail_game_name"
+                android:layout_alignTop="@+id/img_game_photo"
+                android:layout_toRightOf="@+id/img_game_photo"
+                android:layout_toEndOf="@+id/img_game_photo"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/rb_detail_star"
+                android:numStars="5"
+                android:rating="5"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:progressDrawable="@drawable/star"
+                android:layout_alignLeft="@+id/tv_detail_game_name"
+                android:layout_alignStart="@+id/tv_detail_game_name"
+                android:layout_below="@+id/tv_detail_game_name"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_rq_label_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rq"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/tv_detail_game_name"
+                android:layout_alignStart="@+id/tv_detail_game_name"
+                android:layout_below="@+id/rb_detail_star"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_rq_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34343"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/tv_rq_label_detail"
+                android:layout_toEndOf="@+id/tv_rq_label_detail"
+                android:layout_alignBottom="@+id/tv_rq_label_detail"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_remark_label"
+                android:text="  l  评论："
+                android:layout_toRightOf="@+id/tv_rq_detail"
+                android:layout_toEndOf="@+id/tv_rq_detail"
+                android:layout_alignBottom="@+id/tv_rq_detail"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_remark_detail"
+                android:text="10"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/tv_remark_label"
+                android:layout_toEndOf="@+id/tv_remark_label"
+                android:layout_alignBottom="@+id/tv_remark_label"/>
+
+            <TextView
+                android:id="@+id/tv_author_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/author"
+                android:textSize="12sp"
+                android:layout_below="@+id/tv_rq_label_detail"
+                android:layout_marginTop="3dp"
+                android:layout_alignStart="@+id/tv_detail_game_name"
+                android:layout_alignLeft="@+id/tv_detail_game_name"
+                />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可视兔"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/tv_author_label"
+                android:layout_toEndOf="@+id/tv_author_label"
+                android:layout_alignBottom="@+id/tv_author_label"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/tv_collection_detail"
+                android:text="@string/collection"
+                android:textColor="@color/red"
+                android:drawableLeft="@drawable/addtion"
+                android:drawableStart="@drawable/addtion"
+                android:drawablePadding="5dp"
+                android:layout_below="@+id/img_game_photo"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="3"
+                android:textColor="#ffffb14b"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignBottom="@+id/tv_collection_detail"
+                android:background="@drawable/tv_like"
+                android:drawableLeft="@drawable/red_heart"
+                android:drawableStart="@drawable/red_heart"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:gravity="center"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/tv_start_game"
+                android:text="@string/start_game"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@+id/tv_collection_detail"
+                android:layout_toRightOf="@+id/tv_collection_detail"
+                android:layout_toEndOf="@+id/tv_collection_detail"
+                android:layout_toStartOf="@+id/tv_like"
+                android:layout_toLeftOf="@+id/tv_like"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/tv_start_game"
+                android:gravity="center"
+                android:singleLine="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:id="@+id/margin1"
+                android:layout_below="@+id/tv_collection_detail"/>
+
+            <include layout="@layout/margin_grey"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:id="@+id/margin2"
+                android:layout_below="@+id/margin1"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/margin2"
+                android:layout_marginTop="8dp"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/margin_center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/vp_detail"
+                android:layout_marginTop="20dp"
+                android:alpha="200"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_dot1"
+                android:background="@drawable/dot_red"
+                android:layout_toLeftOf="@+id/margin_center"
+                android:layout_toStartOf="@+id/margin_center"
+                android:layout_alignBottom="@+id/margin_center"
+                android:alpha="200"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_dot2"
+                android:background="@drawable/dot_grey"
+                android:layout_toRightOf="@+id/margin_center"
+                android:layout_toEndOf="@+id/margin_center"
+                android:layout_alignBottom="@+id/margin_center"
+                android:alpha="200"
+                />
+
+            <include layout="@layout/margin_grey"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_below="@+id/vp_detail"
+                android:id="@+id/margin3"/>
+
+            <include layout="@layout/tab_three" android:id="@+id/include_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/margin3"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_detail_sub_container"
+                android:layout_below="@+id/include_detail"
+                android:layout_marginTop="15dp"
+                >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</merge>
